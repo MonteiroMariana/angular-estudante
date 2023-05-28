@@ -1,0 +1,32 @@
+{
+  "estudantes": [
+    {
+      "id": 1,
+      "nome": "André",
+      "idade": "19",
+      "media": 7.56,
+      "materias": 12
+    },
+    {
+      "id": 2,
+      "nome": "Maria",
+      "idade": "37",
+      "media": 9.8,
+      "materias": 10
+    },
+    {
+      "id": 3,
+      "nome": "Joaquim",
+      "idade": "70",
+      "media": 3.3,
+      "materias": 8
+    },
+    {
+      "id": 4,
+      "nome": "Theresa Pereira",
+      "idade": 45,
+      "media": 9.78,
+      "materias": 7
+    }
+  ]
+}

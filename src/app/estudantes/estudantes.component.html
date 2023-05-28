@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-8 m-auto">
+      <form [formGroup]="formGroupEstudante">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Campo</th>
+                <th scope="col">Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Nome</th>
+                <td>
+                    <input type="text" formControlName="nome" class="form-control" placeholder="nome">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Idade</th>
+                <td>
+                    <input type="number" formControlName="idade" class="form-control" placeholder="idade">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Média</th>
+                <td>
+                    <input type="number" formControlName="media" class="form-control" placeholder="média">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">N. de matérias</th>
+                <td>
+                    <input type="number" formControlName="materias" class="form-control" placeholder="Quantas matérias?">
+                </td>
+              </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-primary" (click)="criar()">Adicionar</button>
+      </form>
+    </div>
+  </div>
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Idade</th>
+          <th scope="col">Média</th>
+          <th scope="col">N. de matérias</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let estudante of estudantes;">
+          <th scope="row">{{estudante.id}}</th>
+          <td>{{estudante.nome}}</td>
+          <td>{{estudante.idade}}</td>
+          <td>{{estudante.media}}</td>
+          <td>{{estudante.materias}}</td>
+        </tr>
+      </tbody>
+  </table>
